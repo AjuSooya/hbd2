@@ -42,10 +42,14 @@ body {
   font-size: 3rem;
 }
 
-.four {
-  flex-grow: 1; /* .four will take up the remaining space in .container */
-  overflow-y: auto; /* Add overflow-y: auto to .four */
-}
+.four .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+  }
 
 .text-box {
   border: 3px solid #aaa;
