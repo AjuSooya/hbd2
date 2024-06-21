@@ -44,14 +44,16 @@ body {
 
 .four .text-box {
   border: 3px solid #aaa;
+  flex-grow: 1; /* .four will take up the remaining space in .container */
+  overflow-y: auto; /* Add overflow-y: auto to .four */
   border-radius: 5px;
   margin: 0 auto;
   padding: 10px;
   position: relative;
   width: 600px;
-  }
+}
 
-.text-box {
+.text-box p {
   border: 3px solid #aaa;
   border-radius: 5px;
   margin: 0 auto 20px; 
@@ -60,6 +62,7 @@ body {
   width: 600px;
   overflow-y: auto; /* Add overflow-y: auto to .text-box */
 }
+
 .text-box span {
   visibility: hidden;
 }
