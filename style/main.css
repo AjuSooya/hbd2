@@ -14,11 +14,12 @@ body {
 .container {
   height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
   position: relative;
   text-align: center;
   visibility: hidden;
   width: 100vw;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
 }
 
 .container > div {
@@ -41,20 +42,20 @@ body {
   font-size: 3rem;
 }
 
-.four .text-box {
+.four {
+  flex-grow: 1; /* .four will take up the remaining space in .container */
+  overflow-y: auto; /* Add overflow-y: auto to .four */
+}
+
+.text-box {
   border: 3px solid #aaa;
   border-radius: 5px;
-  margin: 0 auto;
+  margin: 0 auto 20px; 
   padding: 10px;
   position: relative;
   width: 600px;
+  overflow-y: auto; /* Add overflow-y: auto to .text-box */
 }
-
-.text-box p {
-  margin: 0;
-  text-align: left;
-}
-
 .text-box span {
   visibility: hidden;
 }
